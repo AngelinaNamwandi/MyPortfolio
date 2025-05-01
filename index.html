@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%237e22ce'/><text x='50' y='70' font-size='60' font-family='Arial, sans-serif' font-weight='bold' text-anchor='middle' fill='white'>AN</text></svg>">
 
-<!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-<link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <!-- THE SITE ICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
 
 
@@ -51,7 +51,7 @@
             position: relative;
         }
         
-        /* Background elements */
+        /* THE TINY PURPLE BLOBS IN THE BACK */
         .blob {
             position: absolute;
             border-radius: 50%;
@@ -96,7 +96,7 @@
             }
         }
         
-        /* Navigation */
+        /* NAVI */
         nav {
             display: flex;
             justify-content: space-between;
@@ -157,7 +157,7 @@
             font-size: 1.5rem;
         }
         
-        /* Hero Section */
+        /* MY LANDING INTRO */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -244,7 +244,7 @@
             display: block;
         }
         
-        /* About Section */
+        /* ABOUT ME */
         .section {
             padding: 6rem 5%;
         }
@@ -340,7 +340,7 @@
             font-weight: 500;
         }
         
-        /* Projects Section */
+        /* MY PROJECTS */
         .projects {
             background-color: white;
         }
@@ -425,7 +425,7 @@
             color: var(--primary-dark);
         }
         
-        /* Contact Section */
+        /* CONTACT ME */
         .contact {
             text-align: center;
             position: relative;
@@ -441,7 +441,7 @@
             animation: float 6s infinite ease-in-out;
         }
 
-        /* Individual tool positions */
+        /* UU DESIGN TOOLS */
         .design-tool.pen { top: 20%; left: 10%; font-size: 3rem; }
         .design-tool.frame { top: 30%; right: 15%; animation-delay: 1s; }
         .design-tool.ruler { bottom: 25%; left: 20%; animation-delay: 2s; }
@@ -504,7 +504,7 @@
             color: var(--primary-dark);
         }
         
-        /* Footer */
+        /* EHULILO */
         footer {
             text-align: center;
             padding: 2rem;
@@ -516,7 +516,7 @@
             color: rgba(255, 255, 255, 0.7);
         }
         
-        /* Responsive Design */
+        /* MOBILE SHANDIES */
         @media (max-width: 992px) {
             .hero h1 {
                 font-size: 2.8rem;
@@ -583,6 +583,7 @@
         }
 
 
+        /* SCROLL TO THE TOP*/
         .scroll-to-top {
         position: fixed;
         bottom: 30px;
@@ -635,12 +636,12 @@
 </style>
 </head>
 <body>
-    <!-- Background elements -->
+    <!-- THE TINY BLOBS IN THE BACK -->
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="blob blob-3"></div>
     
-    <!-- Navigation -->
+    <!-- NAVI -->
     <nav>
         <a href="#" class="logo">AN</a>
         <div class="nav-links">
@@ -653,7 +654,7 @@
         </div>
     </nav>
     
-    <!-- Hero Section -->
+    <!-- LANDING KA INTRO-->
     <section class="hero">
         <div class="hero-content">
             <h1>Hi, I'm <span>Angelina Namwandi</span></h1>
@@ -669,7 +670,7 @@
         </div>
     </section>
     
-    <!-- About Section -->
+    <!-- ABOUT ME -->
     <section class="section" id="about">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
@@ -694,7 +695,7 @@
         </div>
     </section>
     
-    <!-- Projects Section -->
+    <!-- MY PROJECTS -->
     <section class="section projects" id="projects">
         <h2 class="section-title">My Projects</h2>
         <div class="projects-container">
@@ -742,11 +743,11 @@
         </div>
     </section>
     
-    <!-- Contact Section -->
+    <!-- CONTACT ME -->
     <section class="section contact" id="contact">
 
 
-    <!-- Design tool icons background -->
+    <!-- UU DESIGN TOOLS MBU WU LI MO BACKGROUND -->
     <i class="fas fa-pen design-tool pen"></i>
     <i class="fas fa-square design-tool frame"></i>
     <i class="fas fa-ruler-combined design-tool ruler"></i>
@@ -774,7 +775,7 @@
         <a href="mailto:angelina@example.com" class="cta-button">Send Me a Message</a>
     </section>
     
-    <!-- Footer -->
+    <!-- THE END. THE FOOTER -->
     <footer>
         <p>&copy; Made with 💜 by Angelina Namwandi | 2025.</p>
     </footer>
@@ -784,7 +785,7 @@
     </button>
     
     <script>
-        // Mobile menu toggle
+        // MOBILE THINGS FOR TOGGLING THE HAMBURGER
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
         
@@ -792,14 +793,14 @@
             navLinks.classList.toggle('active');
         });
         
-        // Close mobile menu when clicking a link
+        
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
             });
         });
         
-        // Scroll animations
+        // THE SCROLL ANIMATION
         const observerOptions = {
             threshold: 0.1
         };
@@ -812,11 +813,11 @@
             });
         }, observerOptions);
         
-        // Elements to animate
+        
         const animatedElements = document.querySelectorAll('.hero-image, .about-image, .about-text, .project-card');
         animatedElements.forEach(el => observer.observe(el));
         
-        // Smooth scrolling for anchor links
+       
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -831,7 +832,7 @@
             });
         });
 
-        // Scroll to top button
+      //THE KA CIRCLE TO GO TO THE TOP
         const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
         window.addEventListener('scroll', () => {
